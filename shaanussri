@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You, Shaanussri</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+  body{background:linear-gradient(135deg,#fff0f3,#ffe5ec,#fff);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;color:#5c374c}
+  .card{background:white;max-width:650px;width:100%;padding:40px 30px;border-radius:25px;box-shadow:0 20px 40px rgba(255,105,150,.25);text-align:center;animation:fade .6s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  h1{color:#ff4d7d;font-size:32px;margin-bottom:10px}
+  h2{color:#ff4d7d;margin-bottom:20px}
+  p{font-size:17px;line-height:1.8;margin-bottom:18px;text-align:left}
+  .center{text-align:center}
+  button{background:#ff4d7d;color:white;border:none;padding:14px 35px;border-radius:30px;font-size:17px;cursor:pointer;margin-top:20px;box-shadow:0 10px 20px rgba(255,77,125,.4)}
+  button:hover{background:#e63e6d}
+  .page{display:none}.page.active{display:block}
+  .heart{font-size:50px;margin-bottom:10px}
+  .sign{font-size:14px;color:#999;margin-top:30px}
+  ul{text-align:left;line-height:1.8;margin-left:20px;margin-bottom:20px;font-size:16px}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- PAGE 1 -->
+  <div class="page active">
+    <div class="heart">💌</div>
+    <h1>For My Darling, Shaanussri</h1>
+    <p class="center">I made this not to change your mind.<br>I made this because I never told you my truth clearly.<br>My silence hurt you before. So this time, I will not be silent.</p>
+    <p class="center">Please read this once, slowly.<br>As your Sathish.</p>
+    <button onclick="next(1)">Open My Heart →</button>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    <h2>How I Am Feeling Without You</h2>
+    <p>Shaanussri, my days are not normal without you.</p>
+    <p>I wake up and my first thought is you. I sleep and my last thought is you. I am not eating properly. I am not sleeping properly. My heart feels heavy all the time.</p>
+    <p>Not to make you feel guilty. But because a part of me is still waiting for your "Okay darling, understand."</p>
+    <p>Without you, I understood one thing. Your presence was my peace. Your anger was also my peace, because at least you were talking to me.</p>
+    <p>Now there is only silence. And this silence is hurting me more than your anger ever did.</p>
+    <p>I miss you. Not your photos. I miss <b>you</b>. Your overthinking, your tiredness, your Kanni heart.</p>
+    <button onclick="next(2)">Next →</button>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    <h2>My Truth About My Silence</h2>
+    <p>Shaanussri, I need to tell you why I went silent.</p>
+    <p>I was <b>worried about you</b>. I knew you were going through a lot. I knew I cannot solve your problems.</p>
+    <p>Whenever you felt down, I wanted to hold your hand and say "We can overcome it, don't worry, we can handle it."</p>
+    <p>But I thought, if I keep talking when you are tired, I will irritate you. So I kept patience. I gave you space. I thought space is love.</p>
+    <p><b>I was wrong.</b> I understand now. For you, my space felt like distance. My silence felt like torture.</p>
+    <p>I never wanted to torture you. I never wanted to be toxic. I wanted to protect you. But I loved you quietly, when you needed to hear it loudly.</p>
+    <p>I am sorry I didn't tell you again and again "I am silent because I am worried, not because I left you."</p>
+    <p>You are not wrong for feeling hurt. Your feeling is real. I respect your feeling.</p>
+    <button onclick="next(3)">Next →</button>
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    <h2>I Know Apology Isn't Enough</h2>
+    <p>I know apology isn't enough for you.</p>
+    <p>One sorry cannot erase two weeks of overthinking. One sorry cannot erase your tiredness.</p>
+    <p>I am not expecting you to forgive me because I made a website. I am not expecting you to change your mind in December because you read this.</p>
+    <p>I just want you to know, I understood my mistake. And I am changing myself, not for show, but for real.</p>
+    <button onclick="next(4)">Next →</button>
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="page">
+    <h2>What I Am Changing For You</h2>
+    <p>For you, I am changing my behaviour. Not because you forced me. Because I don't want you to feel my silence as pain again.</p>
+    <ul>
+      <li>I will not go silent when upset. I will say "I am upset, give me time, I will come back and talk." Clearly.</li>
+      <li>I will not make you feel responsible for my mood. You don't have to fix me.</li>
+      <li>I will ask you: "Do you want space or do you want me to stay?" I will not assume.</li>
+      <li>I will hold your hand in words, not just in heart. I will say "We can handle it" when you are down.</li>
+    </ul>
+    <p>I removed your birthday because you asked. I will respect your closure because you asked. Respect first, love second.</p>
+    <button onclick="next(5)">Last Page →</button>
+  </div>
+
+  <!-- PAGE 6 -->
+  <div class="page">
+    <div class="heart">🤍</div>
+    <h2>My Last Words, With Dignity</h2>
+    <p class="center">Shaanussri, my darling,</p>
+    <p>I love you. I will not lie about that.</p>
+    <p>But I respect your decision. If you need closure, I will give you closure. I will not disturb you after December.</p>
+    <p>I am not here to trap you. I am here to give you a good memory. A memory that Sathish understood you. A memory that Sathish was not toxic, he was just worried and silent.</p>
+    <p>If one day, after December, you feel like talking, my door is open. If you never feel like talking, I will still respect you and pray for you to be happy as a golden girl.</p>
+    <p class="center"><b>You were never supposed to lose yourself to be loved by me.</b></p>
+    <p class="center">Yours only,<br><b>Sathish</b><br>Your Meethunam</p>
+    <div class="sign">Made with a heavy heart, only for Shaanussri</div>
+  </div>
+
+</div>
+
+<script>
+function next(current){
+  document.querySelectorAll('.page')[current].classList.remove('active');
+  document.querySelectorAll('.page')[current+1].classList.add('active');
+}
+</script>
+</body>
+</html>
